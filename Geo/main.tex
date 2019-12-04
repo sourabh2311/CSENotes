@@ -1,0 +1,125 @@
+\documentclass[8pt, a4paper, oneside, twocolumn]{extarticle}
+\usepackage{verbatim}  % for multiline comments
+\begin{comment}
+The options oneside and twoside affect the width of the side margins.  With oneside , which is the default for article, report, and letter, the margins on both  sides  of  every  page  are  equally  wide.   With twoside, Latex distinguishes between an inner and outer  margin.   The  outer  margin  is  substantially wider  and  switches  between  left  and  right.   Even pages have their outer margin on the left, odd pages on the right.  Most books follow this structure and so it should not come as a surprise that the book class default is twoside.
+The standard Latex classes (article, report etc) support ten, eleven and twelve point text. These are the commonest sizes used in publishing.
+However, for certain applications there may be a need for other sizes.
+The extsizes classes (extarticle, extreport, extbook, extletter, and
+extproc) provide support for sizes eight, nine, ten, eleven, twelve,
+fourteen, seventeen and twenty points.	
+Also as we want whole document to have two columns, we gave it as an optimal parameter however if we want a particular page to have two columns, the command \twocolumn starts a new page having two columns. Accordingly, \onecolumn starts a new page with a single column assuming you are in a two column environment as described above. Both commans do not take any arguments. 
+The is a way to define the distance between the two columns, use
+\setlength{\columnsep}{distance}
+
+If you need a line to separate the columns, the following command will do the job:
+\setlength{\columnseprule}{thickness}
+\end{comment}
+\usepackage{graphicx}
+\usepackage[export]{adjustbox}
+\usepackage[compact]{titlesec}  % documentation: http://mirror.iopb.res.in/tex-archive/macros/latex/contrib/titlesec/titlesec.pdf  
+\usepackage[left=0.8cm, right=0.8cm, top=2cm, bottom=0.3cm, a4paper]{geometry}
+\usepackage{amsmath}
+\usepackage{ulem}
+\usepackage{amssymb}
+\usepackage{minted}  % syntax highlighting
+\usepackage{enumitem} % for setlist
+\setlist{nolistsep}
+\usepackage{fancyhdr} % documentation: http://ctan.math.utah.edu/ctan/tex-archive/macros/latex/contrib/fancyhdr/fancyhdr.pdf
+\begin{comment}
+The pack­age pro­vides ex­ten­sive fa­cil­i­ties, both for con­struct­ing head­ers and foot­ers, and for con­trol­ling their use (for ex­am­ple, at times when LaTeX would au­to­mat­i­cally change the head­ing style in use).
+\end{comment}
+\usepackage{lastpage}  % just so that we can use \pageref {LastPage}
+\usepackage{color, hyperref}
+% The lines in the table of contents become links to the corresponding pages in the document by simply adding in the preamble of the document the line
+\begin{comment}
+\titlespacing{command}{left spacing}{before spacing}{after spacing}[right]
+% spacing: how to read {12pt plus 4pt minus 2pt}
+%           12pt is what we would like the spacing to be
+%           plus 4pt means that TeX can stretch it by at most 4pt
+%           minus 2pt means that TeX can shrink it by at most 2pt
+%       This is one example of the concept of, 'glue', in TeX
+\end{comment}
+\usepackage{tikz}
+\usetikzlibrary{positioning,chains,fit,shapes,calc}
+\newcommand{\swastik}[1]{%
+    \begin{tikzpicture}[#1]
+        \draw (-1,1)  -- (-1,0) -- (1,0) -- (1,-1);
+        \draw (-1,-1) -- (0,-1) -- (0,1) -- (1,1);
+    \end{tikzpicture}%
+}
+\newcommand{\revised}{To be \textcolor{red}{\textbf{revised}}.}
+\titlespacing*{\section}
+{0pt}{0px plus 1px minus 0px}{-2px plus 0px minus 0px}
+\titlespacing*{\subsection}
+{0pt}{0px plus 1px minus 0px}{0px plus 3px minus 3px}
+\titlespacing*{\subsubsection}
+{0pt}{0px plus 1px minus 0px}{0px plus 3px minus 3px}
+
+\setlength{\columnseprule}{0.4pt}
+\pagenumbering{arabic}
+\begin{comment}
+The  page  headers  and  footers  in  Latex are  defined  by  the 	\pagestyle and \pagenumbering commands. \pagestyle defines the general contents of the headers and footers (e.g.  where the page  number  will  be  printed),  while \pagenumbering defines  the  format  of  the  page  number. Latexhas four standard pagestyles:
+empty - no headers or footers
+plain - no header, footer contains page number centered
+headings - no footer,  header contains name of chapter/section and/or sub-section and page number
+myheadings - no footer, header contains page number and user supplied information
+The \pagestyle command changes the style from the current page on throughout the remainder of your document.
+\end {comment}
+\pagestyle{fancy}  % using fancyhdr
+\lhead{}
+\rhead{Page \thepage  \ of \pageref{LastPage} }
+\fancyfoot{}
+
+\headsep 0.2cm  % seperation between header and body
+% Automatically break long lines in minted environments and \mint commands, and wrap longer lines in \mintinline.
+% the number of tabs is equivalent to
+% The symbol used at the beginning (left) of continuation lines when breaklines=true. To have no symbol, simply set breaksymbolleft to an empty string
+\begin {comment}
+You can change the values of the variables defining the page layout with two commands. With this one you can set a new value for an existing length variable:
+
+\setlength{\mylength}{length}
+
+with this other one, you can add a value to the existing one:
+
+\addtolength{\mylength}{length}
+
+\itemsep = vertical space added after each item in the list.
+\parsep = vertical space added after each paragraph in the list.
+\topsep = vertical space added above and below the list.
+\partopsep = vertical space added above and below the list, but only if the list starts a new paragraph.
+
+\end{comment}
+\DeclareRobustCommand{\stirling}{\genfrac\{\}{0pt}{}}
+\setminted{breaklines=true, tabsize=2, breaksymbolleft=}
+\usemintedstyle{perldoc} % takes an optional argument to specify the style for a particular language, and works anywhere in the document
+\begin{document}
+\title{\swastik{scale = 0.2} {}Geography Revision Notes{} \swastik{scale = 0.2}}
+\author{Sourabh Aggarwal}
+\date{Last compiled on \today}
+\maketitle
+\pagenumbering{roman}
+\tableofcontents
+\newpage
+\thispagestyle{fancy}  % else it was not giving fancy header to the first page
+\pagenumbering{arabic}
+\noindent\textcolor{red}{\textbf{RETAIN}}
+
+\section{Introduction and Astronomy}
+\subsection{Prelims Syllabus}
+
+Indian and World Geography-Physical, Social, Economic Geography of India and the World.
+
+\subsection{Mains Syllabus}
+
+\begin{itemize}
+  \item  Salient features of World’s Physical Geography.
+  \item Distribution of Key Natural Resources across the world (including South Asia and the Indian sub-continent); factors responsible for the location of primary, secondary, and tertiary sector industries in various parts of the world (including India).
+  \item Important Geophysical Phenomena such as earthquakes, Tsunami, Volcanic activity, cyclone etc., geographical features and their location-changes in critical geographical features (including water-bodies and ice-caps) and in flora and fauna and the effects of such changes.
+\end{itemize}
+
+\subsection{Introduction}
+
+\begin{itemize}
+  \item Geography : Coined by Eratosthenese (Greek scholar $\sim$200BC) ; Greek roots: Geo (earth) + Graphos (description); Geography is the description of the earth.
+\end{itemize}
+\end{document}
