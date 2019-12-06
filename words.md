@@ -1,3 +1,4 @@
+* **tributary**: a river or stream flowing into a larger river or lake
 * **mound**: pile
 * **excavate**: remove earth carefully from (an area) in order to find buried remains
 * **citadel/acropolis**: a fortress, typically one on high ground above a city
@@ -7,3 +8,5 @@
 * **dockyard**: a place where ships are built, maintained, and repaired.
 * **terracotta**: a type of fired clay, typically of a brownish-red colour
 * **egalitarian**: believing in or based on the principle that all people are equal and deserve equal rights and opportunities
+* **cohesion**: forming a united whole
+* **accrete**: grow by accumulation

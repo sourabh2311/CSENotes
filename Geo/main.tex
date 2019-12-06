@@ -1,4 +1,5 @@
 \documentclass[8pt, a4paper, oneside, twocolumn]{extarticle}
+\usepackage{tcolorbox}
 \usepackage{verbatim}  % for multiline comments
 \begin{comment}
 The options oneside and twoside affect the width of the side margins.  With oneside , which is the default for article, report, and letter, the margins on both  sides  of  every  page  are  equally  wide.   With twoside, Latex distinguishes between an inner and outer  margin.   The  outer  margin  is  substantially wider  and  switches  between  left  and  right.   Even pages have their outer margin on the left, odd pages on the right.  Most books follow this structure and so it should not come as a surprise that the book class default is twoside.
@@ -92,19 +93,26 @@ with this other one, you can add a value to the existing one:
 \DeclareRobustCommand{\stirling}{\genfrac\{\}{0pt}{}}
 \setminted{breaklines=true, tabsize=2, breaksymbolleft=}
 \usemintedstyle{perldoc} % takes an optional argument to specify the style for a particular language, and works anywhere in the document
+\newcommand{\iph}[2]{
+    \includegraphics[width=#1\textwidth,height=#1\textheight,keepaspectratio]{#2}
+}
+\newcommand{\ph}[1]{
+    \includegraphics[width=0.5\textwidth,height=0.5\textheight,keepaspectratio]{#1}
+}
 \begin{document}
-\title{\swastik{scale = 0.2} {}Geography Revision Notes{} \swastik{scale = 0.2}}
+\title{\swastik{scale = 0.2} {}Geography{} \swastik{scale = 0.2}}
 \author{Sourabh Aggarwal}
 \date{Last compiled on \today}
 \maketitle
 \pagenumbering{roman}
+\setcounter{tocdepth}{1}
 \tableofcontents
 \newpage
 \thispagestyle{fancy}  % else it was not giving fancy header to the first page
 \pagenumbering{arabic}
 \noindent\textcolor{red}{\textbf{RETAIN}}
 
-\section{Introduction and Astronomy}
+\section{Syllabus}
 \subsection{Prelims Syllabus}
 
 Indian and World Geography-Physical, Social, Economic Geography of India and the World.
@@ -117,9 +125,111 @@ Indian and World Geography-Physical, Social, Economic Geography of India and the
   \item Important Geophysical Phenomena such as earthquakes, Tsunami, Volcanic activity, cyclone etc., geographical features and their location-changes in critical geographical features (including water-bodies and ice-caps) and in flora and fauna and the effects of such changes.
 \end{itemize}
 
-\subsection{Introduction}
+\section{Introduction}
 
 \begin{itemize}
-  \item Geography : Coined by Eratosthenese (Greek scholar $\sim$200BC) ; Greek roots: Geo (earth) + Graphos (description); Geography is the description of the earth.
+  \item Geography : Coined by Eratosthenese (Greek scholar $\sim$200BC) ; Greek roots: Geo (earth) + Graphos (description); Geography is the description of the earth as the abode of human beings. Geography, thus, is concerned with the study of Nature and Human interactions as an integrated whole. 
+  \item Geographers do not study only the variations in the phenomena over the earth’s surface (space) (\textit{areal differentiation}) but also study the associations with the other factors which cause these variations. A geographer explains the phenomena in a frame of cause and effect relationship, as it does not only help in interpretation but also foresees the phenomena in future.
+  \item Geography spatial synthesis, and history attempts temporal synthesis. 
+  \item The geoid (aka shape of earth) is the shape that the ocean surface would take under the influence of the gravity and rotation of Earth alone, if other influences such as winds and tides were absent.
+  \item Cartography is the study and practice of making maps.
 \end{itemize}
+
+\subsection{Branches of Geography based on systematic approach}
+\begin{enumerate}
+  \item Physical Geography
+  \begin{enumerate}
+    \item Geomorphology - study of landforms, their evolution and related processes.
+    \item Climatology - study of structure of atmosphere and elements of weather and climates and climatic types and regions.
+    \item Hydrology studies the realm of water over the surface of the earth including oceans, lakes, rivers and other water bodies and its effect on different life forms including human life and their activities.
+    \item Soil Geography - study of the processes of soil formation, soil types, their fertility status, distribution and use.
+  \end{enumerate}
+  \item Human Geography
+  \begin{enumerate}
+    \item \textit{Social/Cultural Geography} encompasses the study of society and its spatial dynamics as well as the cultural elements contributed by the society.
+    \item \textit{Population and Settlement Geography} (Rural and Urban). It studies population growth, distribution, density, sex ratio, migration and occupational structure etc. Settlement geography studies the characteristics of rural and urban settlements.
+    \item \textit{Economic Geography} studies economic activities of the people including agriculture, industry, tourism, trade, and transport, infrastructure and services, etc.
+    \item \textit{Historical Geography} studies the historical processes through which the space gets organised. Every region has undergone some historical experiences before attaining the present day status. The geographical features also experience temporal changes and these form the concerns of historical geography.
+    \item \textit{Political Geography} looks at the space from the angle of political events and studies boundaries, space relations between neighbouring political units, delimitation of constituencies, election scenario and develops theoretical framework to understand the political behaviour of the population.
+    
+  \end{enumerate}
+\end{enumerate}
+\section{Origin and evolution of the Earth}
+\subsection{Early Theories}
+One of the earlier and popular arguments was by German philosopher Immanuel Kant. Mathematician Laplace revised it in 1796. It is known as Nebular Hypothesis. The hypothesis considered that the planets were formed out of a cloud of material associated with a youthful sun, which was slowly rotating. Later in 1900, Chamberlain and Moulton considered that a wandering star approached the sun. As a result, a cigar-shaped extension of material was separated from the solar surface. As the passing star moved away, the material separated from the solar surface continued to revolve around the sun and it slowly condensed into planets. Sir James Jeans and later Sir Harold Jeffrey supported this argument. At a later date, the arguments considered of a companion to the sun to have been coexisting. These arguments are called binary theories. In 1950, Otto Schmidt in Russia and Carl Weizascar in Germany somewhat revised the ‘nebular hypothesis’, though differing in details. They considered that the sun was surrounded by solar nebula containing mostly the hydrogen and helium along with what may be termed as dust. The friction and collision of particles led to formation of a disk-shaped cloud and the planets were formed through the process of accretion.
+
+Below are \textbf{Modern Theories}
+
+\subsection{Origin of the Universe}
+
+The most popular argument regarding the origin
+of the universe is the Big Bang Theory. It is also called expanding universe hypothesis. Edwin Hubble, in 1920, provided evidence that the universe is expanding. As time passes, galaxies move further and further apart. Scientists believe that though the space between the galaxies is increasing, observations do not support the expansion of galaxies.
+
+The Big Bang Theory considers the following stages in the development of the universe.
+\begin{enumerate}
+  \item In the beginning, all matter forming the universe existed in one place in the form of a “tiny ball” (singular atom) with an unimaginably small volume, infinite temperature and infinite density. 
+  \item At the Big Bang the “tiny ball” exploded violently. This led to a huge expansion. It is now generally accepted that the event of big bang took place 13.7 billion years before the present. The expansion continues even to the present day. As it grew, some energy was converted into matter. There was particularly rapid expansion within fractions of a second after the bang. Thereafter, the expansion has slowed down. Within first three minutes from the Big Bang event, the first atom began to form. 
+  \item Within 300,000 years from the Big Bang, temperature dropped to 4,500 K (Kelvin) and gave rise to atomic matter. The universe became transparent.
+\end{enumerate}
+
+The expansion of universe means increase in space between the galaxies. An alternative to this was Hoyle’s concept of steady state. It considered the universe to be roughly the same at any point of time.
+
+\subsection{Star Formation}
+
+The distribution of matter and energy was not even in the early universe. These initial density differences gave rise to differences in gravitational forces and it caused the matter to get drawn together. These formed the bases for development of galaxies. A galaxy contains a large number of stars. Galaxies spread over vast distances that are measured in thousands of light-years. The diameters of individual galaxies range from 80,000-150,000 light years. A galaxy starts to form by accumulation of hydrogen gas in the form of a very large cloud called nebula. Eventually, growing nebula develops localised clumps of gas. These clumps continue to grow into even denser gaseous bodies, giving rise to formation of stars. The formation of stars is believed to have taken place some 5-6 billion years ago.
+
+\begin{tcolorbox}
+A light year is a measure of distance and not of time. Light travels at a speed of $3 \times 10^8$ m/s. Considering this, the distances the light will travel in one year is taken to be one light year. This equals to $9.461 \times 10^{12}$ km. The mean distance between the sun and the earth is 149,598,000 km. In terms of light years, it is 8.311minutes ($149598000000/(3 \times 10^8 \times 60)$).
+\end{tcolorbox}
+
+\subsection{Formation of Planets}
+Stages:-
+\begin{enumerate}
+  \item The stars are localised lumps of gas within a nebula. The gravitational force within the lumps leads to the formation of a core to the gas cloud and a huge rotating disc of gas and dust develops around the gas core.
+  \item In the next stage, the gas cloud starts getting condensed and the matter around the core develops into small- rounded objects. These small-rounded objects by the process of cohesion develop into what is called planetesimals. Larger bodies start forming by collision, and gravitational attraction causes the material to stick together. Planetesimals are a large number of smaller bodies.
+  \item In the final stage, these large number of small planetesimals accrete to form a fewer large bodies in the form of planets.
+\end{enumerate}
+\subsection{Our Solar System}
+The nebula from which our Solar system is supposed to have been formed, started its collapse and core formation some time 5-5.6 billion years ago and the planets were formed about 4.6 billion years ago. Our solar system consists of the sun (the star), 8 planets, 63 moons, millions of smaller bodies like asteroids and comets and huge quantity of dust-grains and gases.
+
+Out of the eight planets, mercury, venus, earth and mars are called as the inner planets as they lie between the sun and the belt of asteroids the other four planets are called the outer planets. Alternatively, the first four are called Terrestrial, meaning earth-like as they are made up of rock and metals, and have relatively high densities. The rest four are called Jovian or Gas Giant planets. Jovian means jupiter-like. Most of them are much larger than the terrestrial planets and have thick atmosphere, mostly of helium and hydrogen.
+
+Till recently (August 2006), Pluto was also considered a planet. However, in a meeting of the International Astronomical Union, a decision was taken that Pluto like other celestial objects (2003 $UB_{313}$)discovered in recent past may be called ‘dwarf planet’.
+
+The difference between terrestrial and jovian planets can be attributed to the following conditions (Reasons why inner planets are rocky while others are mostly in gaseous form):
+\begin{enumerate}
+\item The terrestrial planets were formed in the close vicinity of the parent star where it was too warm for gases to condense to solid particles. Jovian planets were formed at quite a distant location. 
+\item The solar wind was most intense nearer the sun; so, it blew off lots of gas and dust from the terrestrial planets. The solar winds were not all that intense to cause similar removal of gases from the Jovian planets. 
+\item The terrestrial planets are smaller and their lower gravity could not hold the escaping gases.
+\end{enumerate}
+
+\subsection{The Moon}
+The moon is the only natural satellite of the earth. Like the origin of the earth, there have been attempts to explain how the moon was formed. In 1838, Sir George Darwin suggested that initially, the earth and the moon formed a single rapidly rotating body. The whole mass became a dumb-bell-shaped body and eventually it broke. It was also suggested that the material forming the moon was separated from what we have at present the depression occupied by the Pacific Ocean.
+
+However, the present scientists do not accept either of the explanations. It is now generally believed that the formation of moon, as a satellite of the earth, is an outcome of ‘giant impact’ or what is described as “the big splat”. A body of the size of one to three times that of mars collided into the earth sometime shortly after the earth was formed. It blasted a large part of the earth into space. This portion of blasted material then continued to orbit the earth and eventually formed into the present moon about 4.44 billion years ago.
+
+\subsection{Evolution of Earth}
+
+Do you know that the planet earth initially was a barren, rocky and hot object with a thin atmosphere of hydrogen and helium. This is far from the present day picture of the earth.
+
+Below explains how the layered structure of the earth developed.
+\subsubsection{Evolution of Lithosphere}
+The earth was mostly in a volatile state during its primordial stage. Due to gradual increase in density the temperature inside has increased. As a result the material inside started getting separated depending on their densities. This allowed heavier materials (like iron) to sink towards the centre of the earth and the lighter ones to move towards the surface. With passage of time it cooled further and solidified and condensed into a smaller size. This later led to the development of the outer surface in the form of a crust. During the formation of the moon, due to the giant impact, the earth was further heated up. It is through the process of \textbf{differentiation} that the earth forming material got separated into different layers. Starting from the surface to the central parts, we have layers like the crust, mantle, outer core and inner core. From the crust to the core, the density of the material increases.
+
+\subsection{Evolution of Atmosphere and Hydrosphere}
+
+The present composition of earth’s atmosphere is chiefly contributed by nitrogen and oxygen.
+
+There are three stages in the evolution of the present atmosphere. The first stage is marked by the loss of primordial atmosphere. In the second stage, the hot interior of the earth contributed to the evolution of the atmosphere. Finally, the composition of the atmosphere was modified by the living world through the process of photosynthesis. The early atmosphere, with hydrogen and helium, is supposed to have been stripped off as a result of the solar winds. This happened not only in case of the earth, but also in all the terrestrial planets, which were supposed to have lost their primordial atmosphere through the impact of solar winds.
+
+During the cooling of the earth, gases and water vapour were released from the interior solid earth. This started the evolution of the present atmosphere. The early atmosphere largely contained water vapour, nitrogen, carbon dioxide, methane, ammonia and very little of free oxygen. The process through which the gases were outpoured from the interior is called degassing. Continuous volcanic eruptions contributed water vapour and gases to the atmosphere. As the earth cooled, the water vapour released started getting condensed. The carbon dioxide in the atmosphere got dissolved in rainwater and the temperature further decreased causing more condensation and more rains. The rainwater falling onto the surface got collected in the depressions to give rise to oceans. The earth’s oceans were formed within 500 million years from the formation of the earth. This tells us that the oceans are as old as 4 billion years. Sometime around 3,800 million years ago, life began to evolve. However, around 2,500-3,000 million years before the present, the process of photosynthesis got evolved. Life was confined to the oceans for a long time. Oceans began to have the contribution of oxygen through the process of photosynthesis. Eventually, oceans were saturated with oxygen, and 2,000 million years ago, oxygen began to flood the atmosphere.
+
+\ph{gts}
+
+Eons are divided into eras, which are in turn divided into periods, epochs and ages.
+
+\ph{ss}
+
+\section{Interior of the Earth}
+
 \end{document}

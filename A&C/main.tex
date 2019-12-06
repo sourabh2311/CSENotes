@@ -1,4 +1,6 @@
 \documentclass[8pt, a4paper, oneside, twocolumn]{extarticle}
+\usepackage{wrapfig}
+\usepackage{lipsum}
 \usepackage{verbatim}  % for multiline comments
 \begin{comment}
 The options oneside and twoside affect the width of the side margins.  With oneside , which is the default for article, report, and letter, the margins on both  sides  of  every  page  are  equally  wide.   With twoside, Latex distinguishes between an inner and outer  margin.   The  outer  margin  is  substantially wider  and  switches  between  left  and  right.   Even pages have their outer margin on the left, odd pages on the right.  Most books follow this structure and so it should not come as a surprise that the book class default is twoside.
@@ -92,12 +94,19 @@ with this other one, you can add a value to the existing one:
 \DeclareRobustCommand{\stirling}{\genfrac\{\}{0pt}{}}
 \setminted{breaklines=true, tabsize=2, breaksymbolleft=}
 \usemintedstyle{perldoc} % takes an optional argument to specify the style for a particular language, and works anywhere in the document
+\newcommand{\iph}[2]{
+    \includegraphics[width=#1\textwidth,height=#1\textheight,keepaspectratio]{#2}
+}
+\newcommand{\ph}[1]{
+    \includegraphics[width=0.5\textwidth,height=0.5\textheight,keepaspectratio]{#1}
+}
 \begin{document}
-\title{\swastik{scale = 0.2} {}Geography Revision Notes{} \swastik{scale = 0.2}}
+\title{\swastik{scale = 0.2} {}Ancient, Medival History along with A\&C{} \swastik{scale = 0.2}}
 \author{Sourabh Aggarwal}
 \date{Last compiled on \today}
 \maketitle
 \pagenumbering{roman}
+\setcounter{tocdepth}{1}
 \tableofcontents
 \newpage
 \thispagestyle{fancy}  % else it was not giving fancy header to the first page
@@ -110,6 +119,49 @@ Considered as part of History.
 \subsection{Mains Syllabus}
 Indian culture will cover the salient aspects of Art Forms, literature and Architecture from ancient to modern times.
 
+\section{India - Geographical features and their impact on history}
+
+A mountain pass is a navigable route through a mountain range or over a ridge (Ridge is a narrow hill top, where as a Range is succession of hills/ mountains like Himalayas). Since many of the world's mountain ranges have presented formidable barriers to travel, passes have played a key role in trade, war, and both human and animal migration throughout Earth's history. At lower elevations it may be called a hill pass.
+
+\iph{0.5}{asia}
+
+A \textbf{peninsula} (Latin: paeninsula from paene "almost” and insula "island") is a landform surrounded by water on the majority of its border while being connected to a mainland from which it extends.
+
+\iph{0.5}{igb}
+
+\iph{0.5}{rivers}
+
+The Indian subcontinent is a well-defined geographical unit. It may be divided into three major regions: The Himalayan Mountains, the Indo-Gangetic Plains and the Southern Peninsula. There are five countries in the subcontinent - India, Pakistan, Bangladesh, Nepal and Bhutan. 
+
+India has 28 states and 9 union territories.
+
+\subsection{Himalayan Mountains}
+Starting from the Pamir in the extreme northwest of India, the mighty Himalayan range extends towards northeast. It has a length of nearly 2.5k kilometres with an average breadth of 280 kilometres. The highest peak of the Himalayas is known as Mount Everest with its height being 8.8 kilometres. It acts as a natural wall and protects the country against the cold arctic winds blowing from Siberia through Central Asia. This keeps the climate of northern India fairly warm throughout the year.
+
+It was considered for a long time that the Himalayas stood as a natural barrier to protect India against invasions. But, the passes in the northwest mountains such as the Khyber, Bolan, Kurram and Gomal provided easy routes between India and Central Asia. These passes are situated in the Hindukush, Sulaiman and Kirthar ranges. From prehistoric times, there was a continuous flow of traffic through these passes. Many people came to India through these passes as invaders, immigrants and merchants. The Indo-Aryans, the Indo-Greeks, Parthians, Sakas, Kushanas, Hunas and Turks entered India through these passes. The Swat valley in this region formed another important route. Alexander of Macedon came to India through this route.
+
+In the north of Kashmir is Karakoram Range. The second highest peak in the world, Mount Godwin Austen is situated here. The Karakoram highway via Gilgit is connected to Central Asia but there was little communication through this route.
+
+The valley of Kashmir is surrounded by high mountains. However, it could be reached through several passes. The Kashmir valley remains unique for its tradition and culture. Nepal is also a small valley under the foot of the Himalayas and it is accessible from Gangetic plains through a number of passes.
+
+In the east, the Himalayas extend up to Assam. The important mountains in this region are Pat Koi, Nagai and Lushai ranges. These hills are covered with thick forests due to heavy rains and mostly remain inhospitable. The mountains of northeast India is difficult to cross and many parts of this region had remained in relative isolation.
+
+\subsection{Indo-Gangetic Plain}
+The Indo-Gangetic plain is irrigated by three important rivers, the Ganges, Indus and Brahmaputra. This vast plain is most fertile and productive because of the alluvial soil brought by the streams of the rivers and its tributaries. The Indus river rises beyond the Himalayas and its major tributaries are the Jhelum, Chenab, Ravi, Sutlej and Beas. The Punjab plains are benefited by the Indus river system. The literal meaning of the term ‘Punjab’ is the land of five rivers. Sind is situated at the lower valley of the Indus. The Indus plain is known for its fertile soil.
+
+The Thar Desert and Aravalli hills are situated in between the Indus and Gangetic plains. Mount Abu is the highest point (5650 ft.) in the Aravalli hills. The Ganges river rises in the Himalayas, flows south and then towards the east. The river Yamuna flows almost parallel to the Ganges and then joins it. The area between these two rivers is called doab – meaning the land between two rivers. The important tributaries of the Ganges are the Gomati, Sarayu, Ghagra and Gandak.
+
+In the east of India, the Ganges plain merges into the plains of Brahmaputra. The river Brahmaputra rises beyond the Himalayas, flows across Tibet and then continues through the plains of northeast India. In the plains, it is a vast but a slow-moving river forming several islands.
+
+The Indo-Gangetic plain has contributed to the rise of urban centres, particularly on the river banks or at the confluence of rivers. The Harappan culture flourished in the Indus valley. The Vedic culture prospered in the western Gangetic plain. Banares, Allahabad, Agra, Delhi and Pataliputra are some of the important cities of the Gangetic plain. The city of Pataliputra was situated at the confluence of Son river with the Ganges. In the ancient period Pataliputra had remained the capital for the Mauryas, Sungas, Guptas and other kingdoms.
+
+The most important city on the western side of the Gangetic plain is Delhi. Most of the decisive battles of Indian history such as the Kurukshetra, Tarain and Panipat were fought near Delhi. Also, this plain had always been a source of temptation and attraction for the foreign invaders due to its fertility and productive wealth. Important powers fought for the possession of these plains and valleys. Especially the Ganga-Yamuna doab proved to be the most coveted and contested area.
+
+The rivers in this region served as arteries of commerce and communication. In ancient times it was difficult to make roads, and so men and material were moved by boat. The importance of rivers for communication continued till the days of the East India Company.
+
+\subsection{The Southern Peninsula}
+
+
 \section{Indus Valley Civilisation And Harappan Culture}
 \begin{itemize}
   \item BCE (Before Common / Current Era) = BC (Before Christ)
@@ -121,6 +173,147 @@ Indian culture will cover the salient aspects of Art Forms, literature and Archi
 \begin{itemize}
   \item Dates $\sim$ 4500 BP.
   \item Is the earliest known urban culture in Indian subcontinent.
-  \item Among many sites of this civilisation discovered so far, the Harappan site was the first to be discovered in 1921 and hence the civilisation is also called as Harappan Civilisation or Harappan Culture.
+  \item Over 1k such settlements have been discovered up till now in the valley of river Indus and the adjoining rivers and their tributaries (hence the name Indus Valley Civilisation)
+  \item early Harappan $<$ 2600 BCE - 1900 BCE (mature Harappan) $<$ late Harappan
+  \item 
 \end{itemize}
+
+--- INSERT MAP ---
+\subsection{Some Sites}
+\subsubsection{Mohenjo-daro}
+\begin{itemize}
+  \item Meaning; mound of the dead.
+  \item In Pakistan.
+  \item Discovered in 1922, amongst the better-preserved sites.
+  \item Second largest Harappan site.
+  \item Existence of citadel/acropolis (smaller but higher, has walls fortifying it from all sides) and lower town (lower but larger, it was walled, apparently to keep flood waters away). Such division is also noted in other urban centres and also indicated the division of this urban society into two parts.
+  \item Structures (like great bath, warehouse, pillared hall, etc. (in citadel) which appear to have been used for public purposes) and houses were build on raised mud and burnt brick platform. (This point is true for both citadel and lower town).
+  \item Bricks were of standard size and ratio, similar / standard bricks were employed in all settlements.
+  \item Great Bath was apparently used for ceremonial bathing purposes. The tank was watertight as it was made of tightly fitting bricks with coating of mud and gypsum plaster. The pool had an array of rooms located on one side of it with a well located in one  of the rooms, which was used for drawing water for the pool. It is a reflection of the achievement of this civilisation in the field of engineering and construction technology. Besides, it also indicated the social significance attached to religious/ceremonial matters in public life. 
+  \item Discovery of Great Bath, pillared hall, granary planned roads, sewage system.
+\end{itemize}
+\subsubsection{Harappa}
+\begin{itemize}
+  \item In Pakistan.
+  \item Earliest discoverred (in 1921); thus IVC is also called Harappan Civilisation or Harappan Culture.
+  \item One of the largest sites, but less preserved as ruin - bricks were used for ballast for laying tracks in early British Rule and also lost due to theft.
+  \item The Great Granary.
+\end{itemize}
+\subsubsection{Lothal}
+\begin{itemize}
+  \item In Gujarat.
+  \item Meaning Loth-Sthal; mound of dead.
+  \item Existance of earliest dockyard and acropolis.
+  \item Discovery of weights and measures. An ivory scale (to measure length) was found showing smallest division of 1.704mm.
+  \item Flourishing centre of beads and gem making.
+  \item Was an important trading town.
+\end{itemize}
+\subsubsection{Dholavira}
+\begin{itemize}
+  \item In Gujarat.
+  \item Discovery of large water reservoirs (build of stone) drawing water from channels and rivulets.
+  \item One of the five large settlements of Harappan culture.
+  \item Large signboard containing 26 signs. (Most of indus script inscriptions are short)
+\end{itemize}
+\subsubsection{Rakhigarhi}
+\begin{itemize}
+  \item In Haryana.
+  \item Largest Harappan site.
+  \item Discovery of artifacts 5000 years old (early Harappan phase)
+  \item Paved roads, rain water collection, drainage system, granary, bronze artifiacts, bangles, etc.
+  \item Discovery of female skeletons with shell banges and gold armlet.
+\end{itemize}
+\subsubsection{Kalibangan}
+\begin{itemize}
+  \item In Rajasthan.
+  \item Literally means black bangles owing to discovery of a number of terracotta black bangles at this site.
+  \item Represents early Harappan phase.
+  \item Fortified settlement citadel and fire altars discovered.
+\end{itemize}
+\subsubsection{Kot Diji}
+\begin{itemize}
+  \item In Pakistan.
+  \item Settlement of early Harappan phase.
+  \item Existence of citadel and lower town.
+  \item Discovery of defensive wall with a mud brick revetment with bastions.
+\end{itemize}
+\subsubsection{Ganeriwala}
+\begin{itemize}
+  \item In Pakistan.
+  \item Among the largest cities of Harappan civilisation.
+\end{itemize}
+\subsection{Additional Features}
+\begin{itemize}
+  \item \textbf{Streets and Town Planning}
+    \begin{itemize}
+      \item running at right angles in east-west and north-south dirns resembling a grid pattern.
+      \item Had arrangement for street lighting.
+      \item Streets along with drainage system seems to have been constructed first and the housed built around them later indicating existence of advanced town planning and municipal system.
+    \end{itemize}
+  \item \textbf{Drainage System}
+    \begin{itemize}
+      \item Each house had its private drinking well and bathroom. The water from them ran through clay pipes into underground drains which ran into main drains. 
+      \item Main drains made of bricks set in mortar and had large cross sections.
+      \item The house drains were first emptied into a cesspit or a sump in which the solid matter would first settle allowing the water to drain in the main drain. The latter had sump at regular intervals to enable its cleaning. This is indicative of not only the advancement in municipal system and importance attached to social and personal hygiene but also of proper planning and good knowledge of brick-mortar contruction.
+    \end{itemize}
+  \item \textbf{Domestic House Planning and Architecture}
+    \begin{itemize}
+      \item Houses were contructed along the roads and drains.
+      \item Houses is centred around a courtyard with rooms build around it.
+      \item Each house had a separate bathroom with a well.
+    \end{itemize}
+  \item \textbf{Indus Script}
+    \begin{itemize}
+      \item Not yet deciphered and may have been a pictographic one.
+      \item Written right to left.
+    \end{itemize}
+  \item \textbf{Weights and Measures}
+    \begin{itemize}
+      \item Weights were made of cubical pieces of stone called Cherts. While the lower weights were binary in nature  (ratio of 1:2:4:8, etc.) the higher weights were of decimal base. 
+      \item The use of accurate weights and measures indicated advancement in science and mathematics and growth of trade and commerce in the civilisation.
+    \end{itemize}
+\end{itemize}
+\subsection{Important Seals and Artifacts}
+Chanhudaro (in Pakistan) was an important cenre of such crafts which included bead making, metal works, making of seals, artifacts, pottery and sheet cutting. A variety of stones, viz. steatite, quartz and jasper crystal were used. Besides, terracotta, faience, and metals like copper, bronze and even gold were used. Indicating hight standards of craftsmanship, knowledge of metallurgy and foundry. 
+\subsubsection{Shiva Pashupati seal}
+\iph{0.4}{pashupati}
+
+Tiger, elephant, rhinoceros and antelope.
+
+Considered to be proto-Shiva or early form of Shiva/Pashupati/Rudra.
+\subsubsection{Mother Goddess}
+
+Is a terracotta figurine of a woman adorned with jewellery and imposing fan shaped headgear.
+
+This and above imply Hindu belief.
+\subsubsection{Priest King statue}
+
+Stone (steatite) statue of a bearded man believed to be priest king. Ribbon band with a circular inlay ornament on head and forearm. Figure is draped in a shawl with trefoil.
+
+\subsubsection{The Dancing Girl statue}
+Small bronze statue of a dancing girl found in Mohenjo-daro is an excellent example of art and metallurgy. 
+
+\iph{0.2}{dancinggirl}
+
+\subsubsection{Bull Seal}
+Has good depication of anatomy. Indicated knowledge of wild animal and hunting. We as well have unicorn seal. Over 4k seals pertaining to Harappan period have been discovered. They are believed to be used for sealing the consignment of goods and securing them (by placing a mark of the sel on the opening). The presence of an intact seal on the consignment at the destination was a sign of the goods being secure. Besides, the seals were also an indication of the identity of the sender. The discovery of a large number of seals at various sites is an indication of flourishing trade and commerce and also of the fact that this urban civilisation was not just an agriculture dependent economy. 
+
+\subsubsection{Male Torso}
+Red sand statue depicting male torso. Figure has socket holes in the arms and neck for attachment of arms and neck.
+
+\subsection{Society and Government}
+From the archeological findings it is noted that the Harappan bricks, seal weights, etched uniformly irrespective of not being produced in same centre and being found in different places. The uniformity in bricks is especially noteworthy as they had common ratio of sides. Further the existence of town planning, establishment of settlements near the source of raw material, etc. all point towards existence of some king of central authority. However, lack of discovery of large and distinct structures such as palaces (as found in Mesopotamian and Egyptian sites) suggests that the authority may not have been a monarch or a king. Thus, the society could have been egalitarian with distribution of power in hands of many. Some historians even suggest that each of the various sites could have had separate rulers. However, the latter is less likely considering the uniformity in weights and measures, bricks and artifacts. 
+
+\subsection{Burials and Belief in Afterlife}
+In some burial pits, brick linings were also found indicating existence of social differences. Some of the dead were buried along with items of jewellery and pottery indicating belief in afterlife.
+
+\subsection{Trade and Commerce}
+Trade and commerce was an important sector of this culture's economy as evident from the numerous seals and artifacts. The raw material used in production were sourced from different places, viz. copper from Oman. Similarly, Harappan artifacts have been found at different sites too, viz. Harappan jars found at Omani sites. The trade and commerce could have been carried through land or through sea. Seals depicting ships have been discovered besides dockyard of Lothal which is further indicative of sea trade. 
+\subsection{Agriculture}
+Discovery of grains at some of the Harappan sites and terracotta models of plough found at Cholistan and Banawali (Haryana) point towards prevalence of agriculture. Terracota figurines, statue, and seals of bulls also suggest that oxen might have been used for ploughing. Evidence of ploughed fields has been found at Kalibangan. Irrigation is thought to have been carried by use of wells or reservoirs which were found at Dholavira. Some traces of canals have also been identified at Shortughai, a Harappan site in Afghanistan. Barley and wheat were the major cultivated cereal crops.
+\subsection{Fabric and Cloth}
+Cotton was commonly used as fabric for clothing, although wool could also have been used. Finding of spindels indicate that weaving and spinning was known. Needles and buttons have been discovered indiciating that perhaps stiching was also known. Dress or fabric has not survived but statues and gigurines suggest that two piieces of cloth were used by men and women. One piece resembled a dhoti covering the lower body. Other portion was worn over the left shoulder under the right arm. 
+
+\subsection{Games, sports, and entertainment}
+Objects similar to dice games and clay carts have been found. Hunting is believed to be common as seen from a number of seals carrying images of animals. Dancing and singing were popular as seen from the bronze statue of the dancing girl.
 \end{document}
