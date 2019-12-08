@@ -1,3 +1,9 @@
+* **conduit**: a channel for conveying water or other fluid
+* **exfoliate**: (of a material) be shed from a surface
+* **intrusive**: causing disruption or annoyance through being unwelcome or uninvited
+* **cinder**: a small piece of partly burnt coal or wood that has stopped giving off flames but still has combustible matter in it
+* **stratum**: a layer or a series of layers of rock in the ground
+* **brittle**: hard but liable to break easily.
 * **tributary**: a river or stream flowing into a larger river or lake
 * **mound**: pile
 * **excavate**: remove earth carefully from (an area) in order to find buried remains

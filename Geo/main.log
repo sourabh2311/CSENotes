@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2019.10.30)  5 DEC 2019 20:09
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2019.10.30)  8 DEC 2019 10:19
 entering extended mode
  \write18 enabled.
  file:line:error style messages enabled.
@@ -829,66 +829,281 @@ Underfull \hbox (badness 1142) in paragraph at lines 125--126
 \OT1/cmr/m/n/8 Vol-canic ac-tiv-ity, cy-clone etc., ge-o-graph-i-cal fea-tures and their
  []
 
+<asia.jpg, id=47, 1003.75pt x 769.87625pt>
+File: asia.jpg Graphic file (type jpg)
+<use asia.jpg>
+Package pdftex.def Info: asia.jpg  used on input line 132.
+(pdftex.def)             Requested size: 275.99382pt x 211.68726pt.
+
+Overfull \hbox (22.00241pt too wide) in paragraph at lines 132--133
+[][] 
+ []
+
+<syncanti.png, id=48, 168.63pt x 91.0602pt>
+File: syncanti.png Graphic file (type png)
+<use syncanti.png>
+Package pdftex.def Info: syncanti.png  used on input line 137.
+(pdftex.def)             Requested size: 110.39555pt x 59.61359pt.
+<latlon.jpg, id=50, 1502.61375pt x 1606.0pt>
+File: latlon.jpg Graphic file (type jpg)
+<use latlon.jpg>
+Package pdftex.def Info: latlon.jpg  used on input line 138.
+(pdftex.def)             Requested size: 110.37543pt x 117.96974pt.
 [1{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}
 
 
-] [2]
-<gts.png, id=80, 701.62125pt x 708.6475pt>
+ <./asia.jpg> <./syncanti.png> <./latlon.jpg>]
+<time.jpg, id=67, 1606.0pt x 1101.11375pt>
+File: time.jpg Graphic file (type jpg)
+<use time.jpg>
+Package pdftex.def Info: time.jpg  used on input line 159.
+(pdftex.def)             Requested size: 275.98157pt x 189.21986pt.
+
+Overfull \hbox (21.99016pt too wide) in paragraph at lines 159--160
+[][] 
+ []
+
+<sub.png, id=68, 514.92375pt x 271.0125pt>
+File: sub.png Graphic file (type png)
+<use sub.png>
+Package pdftex.def Info: sub.png  used on input line 160.
+(pdftex.def)             Requested size: 165.5961pt x 87.15584pt.
+<season.jpg, id=69, 501.875pt x 649.42625pt>
+File: season.jpg Graphic file (type jpg)
+<use season.jpg>
+Package pdftex.def Info: season.jpg  used on input line 165.
+(pdftex.def)             Requested size: 276.00146pt x 357.1459pt.
+
+Overfull \hbox (22.01006pt too wide) in paragraph at lines 165--166
+[][] 
+ []
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+<sol2.jpg, id=70, 481.8pt x 361.35pt>
+File: sol2.jpg Graphic file (type jpg)
+<use sol2.jpg>
+Package pdftex.def Info: sol2.jpg  used on input line 166.
+(pdftex.def)             Requested size: 275.99626pt x 206.9972pt.
+
+Overfull \hbox (22.00485pt too wide) in paragraph at lines 166--167
+[][]
+ []
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [2 <./time.jpg> <./sub.png> <./season.jpg> <./sol2.jpg>]
+<fieldgeo.png, id=80, 1391.1975pt x 855.195pt>
+File: fieldgeo.png Graphic file (type png)
+<use fieldgeo.png>
+Package pdftex.def Info: fieldgeo.png  used on input line 233.
+(pdftex.def)             Requested size: 275.9844pt x 169.65276pt.
+
+Overfull \hbox (4.99275pt too wide) in paragraph at lines 233--234
+[]
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 233--234
+
+ []
+
+[3 <./fieldgeo.png>]
+<gts.png, id=123, 701.62125pt x 708.6475pt>
 File: gts.png Graphic file (type png)
 <use gts.png>
-Package pdftex.def Info: gts.png  used on input line 227.
+Package pdftex.def Info: gts.png  used on input line 305.
 (pdftex.def)             Requested size: 275.99718pt x 278.76111pt.
 
-Overfull \hbox (13.50565pt too wide) in paragraph at lines 227--228
+Overfull \hbox (13.50565pt too wide) in paragraph at lines 305--306
 [][]
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 227--228
+Underfull \hbox (badness 10000) in paragraph at lines 305--306
 
  []
 
-<ss.png, id=82, 1656.1875pt x 656.4525pt>
-File: ss.png Graphic file (type png)
-<use ss.png>
-Package pdftex.def Info: ss.png  used on input line 231.
-(pdftex.def)             Requested size: 275.98845pt x 109.39178pt.
+<ss2.png, id=124, 1476.51625pt x 464.73625pt>
+File: ss2.png Graphic file (type png)
+<use ss2.png>
+Package pdftex.def Info: ss2.png  used on input line 309.
+(pdftex.def)             Requested size: 275.98999pt x 86.86836pt.
 
-Overfull \hbox (13.49692pt too wide) in paragraph at lines 231--232
+Overfull \hbox (13.49846pt too wide) in paragraph at lines 309--310
 [][]
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 231--232
+Underfull \hbox (badness 10000) in paragraph at lines 309--310
+
+ []
+
+
+Underfull \vbox (badness 1168) has occurred while \output is active []
+
+ [4 <./gts.png>]
+<equakew.png, id=144, 833.1125pt x 425.59pt>
+File: equakew.png Graphic file (type png)
+<use equakew.png>
+Package pdftex.def Info: equakew.png  used on input line 336.
+(pdftex.def)             Requested size: 275.9958pt x 140.99062pt.
+
+Overfull \hbox (13.50427pt too wide) in paragraph at lines 336--337
+[][]
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 336--337
+
+ []
+
+<tc.png, id=145, 1204.5pt x 593.21625pt>
+File: tc.png Graphic file (type png)
+<use tc.png>
+Package pdftex.def Info: tc.png  used on input line 351.
+(pdftex.def)             Requested size: 110.38527pt x 54.36475pt.
+<psz.png, id=146, 850.17625pt x 798.985pt>
+File: psz.png Graphic file (type png)
+<use psz.png>
+Package pdftex.def Info: psz.png  used on input line 353.
+(pdftex.def)             Requested size: 165.5956pt x 155.62466pt.
+<ssz.png, id=147, 818.05624pt x 823.075pt>
+File: ssz.png Graphic file (type png)
+<use ssz.png>
+Package pdftex.def Info: ssz.png  used on input line 355.
+(pdftex.def)             Requested size: 165.59306pt x 166.60898pt.
+[5 <./ss2.png> <./equakew.png> <./tc.png> <./psz.png> <./ssz.png>]
+<earth.png, id=171, 1144.275pt x 797.98125pt>
+File: earth.png Graphic file (type png)
+<use earth.png>
+Package pdftex.def Info: earth.png  used on input line 385.
+(pdftex.def)             Requested size: 275.9935pt x 192.46915pt.
+
+Overfull \hbox (5.00185pt too wide) in paragraph at lines 385--386
+[]
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 385--386
+
+ []
+
+<if.png, id=172, 916.42375pt x 826.08624pt>
+File: if.png Graphic file (type png)
+<use if.png>
+Package pdftex.def Info: if.png  used on input line 414.
+(pdftex.def)             Requested size: 275.99199pt x 248.78577pt.
+
+Overfull \hbox (13.50046pt too wide) in paragraph at lines 414--415
+[][]
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 414--415
+
+ []
+
+[6 <./earth.png> <./if.png>]
+<continents.png, id=191, 1104.125pt x 610.28pt>
+File: continents.png Graphic file (type png)
+<use continents.png>
+Package pdftex.def Info: continents.png  used on input line 426.
+(pdftex.def)             Requested size: 275.99687pt x 152.551pt.
+
+Overfull \hbox (13.50534pt too wide) in paragraph at lines 426--427
+[][]
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 426--427
+
+ []
+
+<cs.jpg, id=192, 640.3925pt x 480.79625pt>
+File: cs.jpg Graphic file (type jpg)
+<use cs.jpg>
+Package pdftex.def Info: cs.jpg  used on input line 450.
+(pdftex.def)             Requested size: 275.98878pt x 207.20787pt.
+
+Overfull \hbox (13.49725pt too wide) in paragraph at lines 450--451
+[][]
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 450--451
+
+ []
+
+<cr.png, id=193, 1204.5pt x 848.16875pt>
+File: cr.png Graphic file (type png)
+<use cr.png>
+Package pdftex.def Info: cr.png  used on input line 452.
+(pdftex.def)             Requested size: 193.18341pt x 136.03331pt.
+
+Underfull \vbox (badness 5147) has occurred while \output is active []
+
+ [7 <./continents.png> <./cs.jpg>]
+
+LaTeX Warning: Command \textendash invalid in math mode on input line 499.
+
+
+LaTeX Warning: Command \textendash invalid in math mode on input line 499.
+
+
+Underfull \hbox (badness 2856) in paragraph at lines 499--500
+\OT1/cmr/m/n/8 A rock is an ag-gre-gate of one or more min-er-als. Rocks do
+ []
+
+
+Underfull \hbox (badness 1460) in paragraph at lines 499--500
+\OT1/cmr/m/n/8 not have def-i-nite com-po-si-tion of min-eral con-stituents. \OT1/cmr/bx/n/8 Feldspar
+ []
+
+[8 <./cr.png>]
+<rockcycle.png, id=240, 739.76375pt x 571.13374pt>
+File: rockcycle.png Graphic file (type png)
+<use rockcycle.png>
+Package pdftex.def Info: rockcycle.png  used on input line 519.
+(pdftex.def)             Requested size: 275.98845pt x 213.07657pt.
+
+Overfull \hbox (13.49692pt too wide) in paragraph at lines 519--520
+[][]
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 519--520
 
  []
 
 
 AED: lastpage setting LastPage
-[3
+[9
 
- <./gts.png> <./ss.png>]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 235.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 235.
+ <./rockcycle.png>]
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 537.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 537.
  (./main.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 235.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 235.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 537.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 537.
 Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: 0F8C0670015346BEADA48E42A0427BB1;214.
+(rerunfilecheck)             Checksum: 751F91E9BC1A98D2FE3A07929A40EA8F;448.
  ) 
 Here is how much of TeX's memory you used:
- 25009 strings out of 492609
- 501697 string characters out of 6131461
- 668920 words of memory out of 5000000
- 28406 multiletter control sequences out of 15000+600000
+ 25194 strings out of 492609
+ 503933 string characters out of 6131461
+ 667920 words of memory out of 5000000
+ 28488 multiletter control sequences out of 15000+600000
  10420 words of font info for 41 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 54i,11n,73p,1408b,519s stack positions out of 5000i,500n,10000p,200000b,80000s
-</usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmti8.pfb>
-Output written on main.pdf (3 pages, 357412 bytes).
+ 54i,11n,73p,1547b,519s stack positions out of 5000i,500n,10000p,200000b,80000s
+</usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy6.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmti8.pfb>
+Output written on main.pdf (9 pages, 4946597 bytes).
 PDF statistics:
- 131 PDF objects out of 1000 (max. 8388607)
- 111 compressed objects within 2 object streams
- 40 named destinations out of 1000 (max. 500000)
- 55 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 309 PDF objects out of 1000 (max. 8388607)
+ 252 compressed objects within 3 object streams
+ 126 named destinations out of 1000 (max. 500000)
+ 177 words of extra memory for PDF output out of 10000 (max. 10000000)
 
